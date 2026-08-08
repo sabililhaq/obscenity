@@ -1,61 +1,70 @@
 # Obscenity Bahasa Indonesia
-Dataset Bahasa Indonesia untuk Obscenity.
+
+Dataset Bahasa Indonesia untuk [Obscenity](https://github.com/jo3-l/obscenity).
 
 Silakan kontribusi ke file ini:
-https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json
+📄 [`indonesian-words.json`](https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json)
 
-⚠️ Trigger warning: file tersebut berisi kata-kata kasar/eksplisit.
+⚠️ **Trigger warning**: file tersebut berisi kata-kata kasar/eksplisit.
 
 ## Latar belakang
 
 Saya pernah develop fitur chatting di company, dan salah satu masalahnya adalah filtering kata-kata kasar.
 
-Selain itu, dari diskusi dengan teman yang pernah kerja di salah satu perusahaan yang juga membutuhkan fitur sensor kata, ternyata masalahnya nggak selalu cuma soal kata kasar. Nama orang tertentu, termasuk nama CEO, juga kadang perlu ikut di-sensor. Jadi kebutuhan filtering di dunia nyata bisa lebih luas daripada sekadar punya daftar swear words.
+Dari diskusi dengan teman yang pernah kerja di perusahaan lain yang juga butuh fitur sensor kata, ternyata masalahnya nggak selalu soal kata kasar doang. Nama orang tertentu, termasuk nama CEO, kadang juga perlu ikut disensor. Jadi kebutuhan filtering di dunia nyata bisa lebih luas daripada sekadar punya daftar swear words.
 
-Terus, saya juga main game. Kalau pernah main game online, mungkin sudah tahu sendiri player Indonesia bisa se-toxic apa 😭. https://www.kompasiana.com/maxcosgaming3278/5e5f55f5097f367c0268f6c2/player-indonesia-adalah-player-tertoxic
+Saya juga main game, dan kalau pernah main game online, mungkin sudah tahu sendiri [player Indonesia bisa se-toxic apa](https://www.kompasiana.com/maxcosgaming3278/5e5f55f5097f367c0268f6c2/player-indonesia-adalah-player-tertoxic) 😭.
 
-Nah, masalahnya bukan cuma gimana cara mendeteksi kata kasar, tapi juga gimana supaya nggak salah nuduh. (**false positive**)
+Nah, masalahnya bukan cuma soal gimana cara mendeteksi kata kasar, tapi juga gimana caranya supaya nggak salah nuduh (**false positive**). Contohnya:
 
-Contohnya:
-
-sukonto legowo
-babi guling
-Taiwan
+- Sukonto Legowo
+- babi guling
+- Taiwan
 
 Jangan sampai kata/frasa yang sebenarnya normal malah ikut ke-censor gara-gara mengandung substring yang dianggap kasar.
 
 ## Obscenity fork
 
-Awalnya saya mau bikin profanity filter dari awal, tapi ternyata sudah ada Obscenity yang konsepnya cukup menarik.
+Awalnya saya mau bikin profanity filter dari nol, tapi ternyata sudah ada Obscenity yang konsepnya cukup menarik — salah satunya **leet word transformation**.
 
-Salah satunya adalah leet word transformation.
+Orang yang mau menghindari sensor bisa aja nulis:
 
-Jadi, orang yang mau menghindari sensor bisa aja nulis:
+- anjing
+- 4nj1ng
+- 4nj!ng
 
-anjing
-4nj1ng
-4nj!ng
+Daripada harus masukin semua variasi itu satu-satu ke dataset, Obscenity bisa melakukan transformasi dulu sebelum matching.
 
-Daripada harus masukin semua variasi tersebut satu-satu ke dataset, Obscenity bisa melakukan transformasi terlebih dahulu sebelum melakukan matching.
+## Kontribusi
 
-Kontribusi
+Kalau mau kontribusi, terutama untuk data Bahasa Indonesia, silakan cek file berikut:
 
-Kalau mau kontribusi, terutama untuk data Bahasa Indonesia, silakan cek:
-
-https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json
+📄 [`indonesian-words.json`](https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json)
 
 Di situ ada daftar kata kasar dan whitelist-nya.
 
-Contohnya babi masuk sebagai kata yang perlu difilter, tapi babi guling ada di whitelist karena itu frasa normal.
+### Contoh
 
-Jadi kalau kalian nemu:
+Kata **babi** masuk sebagai kata yang perlu difilter, tapi **babi guling** ada di whitelist karena itu frasa normal.
 
-kata kasar Bahasa Indonesia yang belum ada
-variasi penulisan yang sering dipakai
-kata/frasa yang kena false positive
-whitelist yang menurut kalian perlu ditambahkan
+🔗 [Lihat contoh di source](https://github.com/sabililhaq/obscenity/blob/437c89b617d929dc683695f07dc0083df5606b90/src/preset/data/indonesian-words.json#L7)
 
-langsung contribute aja ke dataset tersebut.
+```json
+{
+  "originalWord": "babi",
+  "patterns": ["|babi|"],
+  "whitelistedTerms": ["babi guling"]
+},
+```
+
+### Yang bisa kalian kontribusikan
+
+Kalau kalian nemu:
+
+- Kata kasar Bahasa Indonesia yang belum ada
+- Variasi penulisan yang sering dipakai
+- Kata/frasa yang kena false positive
+- Whitelist yang menurut kalian perlu ditambahkan
 
 # Obscenity
 
