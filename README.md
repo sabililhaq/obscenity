@@ -1,3 +1,62 @@
+# Obscenity Bahasa Indonesia
+Dataset Bahasa Indonesia untuk Obscenity.
+
+Silakan kontribusi ke file ini:
+https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json
+
+⚠️ Trigger warning: file tersebut berisi kata-kata kasar/eksplisit.
+
+## Latar belakang
+
+Saya pernah develop fitur chatting di company, dan salah satu masalahnya adalah filtering kata-kata kasar.
+
+Selain itu, dari diskusi dengan teman yang pernah kerja di salah satu perusahaan yang juga membutuhkan fitur sensor kata, ternyata masalahnya nggak selalu cuma soal kata kasar. Nama orang tertentu, termasuk nama CEO, juga kadang perlu ikut di-sensor. Jadi kebutuhan filtering di dunia nyata bisa lebih luas daripada sekadar punya daftar swear words.
+
+Terus, saya juga main game. Kalau pernah main game online, mungkin sudah tahu sendiri player Indonesia bisa se-toxic apa 😭. https://www.kompasiana.com/maxcosgaming3278/5e5f55f5097f367c0268f6c2/player-indonesia-adalah-player-tertoxic
+
+Nah, masalahnya bukan cuma gimana cara mendeteksi kata kasar, tapi juga gimana supaya nggak salah nuduh. (**false positive**)
+
+Contohnya:
+
+sukonto legowo
+babi guling
+Taiwan
+
+Jangan sampai kata/frasa yang sebenarnya normal malah ikut ke-censor gara-gara mengandung substring yang dianggap kasar.
+
+## Obscenity fork
+
+Awalnya saya mau bikin profanity filter dari awal, tapi ternyata sudah ada Obscenity yang konsepnya cukup menarik.
+
+Salah satunya adalah leet word transformation.
+
+Jadi, orang yang mau menghindari sensor bisa aja nulis:
+
+anjing
+4nj1ng
+4nj!ng
+
+Daripada harus masukin semua variasi tersebut satu-satu ke dataset, Obscenity bisa melakukan transformasi terlebih dahulu sebelum melakukan matching.
+
+Kontribusi
+
+Kalau mau kontribusi, terutama untuk data Bahasa Indonesia, silakan cek:
+
+https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json
+
+Di situ ada daftar kata kasar dan whitelist-nya.
+
+Contohnya babi masuk sebagai kata yang perlu difilter, tapi babi guling ada di whitelist karena itu frasa normal.
+
+Jadi kalau kalian nemu:
+
+kata kasar Bahasa Indonesia yang belum ada
+variasi penulisan yang sering dipakai
+kata/frasa yang kena false positive
+whitelist yang menurut kalian perlu ditambahkan
+
+langsung contribute aja ke dataset tersebut.
+
 # Obscenity
 
 > Robust, extensible profanity filter for NodeJS.
