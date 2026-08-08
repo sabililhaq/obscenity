@@ -1,11 +1,13 @@
 # Obscenity Bahasa Indonesia
 
+Punya temen toxic? Refer ke sini aja, biar ke-toxic-annya bisa bermanfaat :p
+
 Dataset Bahasa Indonesia untuk [Obscenity](https://github.com/jo3-l/obscenity).
 
 Silakan kontribusi ke file ini:
 📄 [`indonesian-words.json`](https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json)
 
-⚠️ **Trigger warning**: file tersebut berisi kata-kata kasar/eksplisit.
+⚠️ **Trigger warning**: berisi kata-kata kasar/eksplisit.
 
 ## Latar belakang
 
@@ -25,19 +27,18 @@ Jangan sampai kata/frasa yang sebenarnya normal malah ikut ke-censor gara-gara m
 
 ## Obscenity fork
 
-Awalnya saya mau bikin profanity filter dari nol, tapi ternyata sudah ada Obscenity yang konsepnya cukup menarik — salah satunya **leet word transformation**.
+Awalnya saya mau bikin profanity filter Bahasa Indonesia dari nol, tapi ternyata sudah ada Obscenity yang konsepnya cukup menarik, salah satunya **leet word transformation**.
 
 Orang yang mau menghindari sensor bisa aja nulis:
-
-- anjing
+- anjin9
 - 4nj1ng
-- 4nj!ng
+- anjiing
 
-Daripada harus masukin semua variasi itu satu-satu ke dataset, Obscenity bisa melakukan transformasi dulu sebelum matching.
+Daripada harus masukin semua variasi ke dataset, Obscenity bisa transformasi dulu sebelum matching.
 
 ## Kontribusi
 
-Kalau mau kontribusi, terutama untuk data Bahasa Indonesia, silakan cek file berikut:
+Kalau mau kontribusi, terutama untuk data Bahasa Indonesia, silakan cek file:
 
 📄 [`indonesian-words.json`](https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json)
 
@@ -47,7 +48,7 @@ Di situ ada daftar kata kasar dan whitelist-nya.
 
 Kata **babi** masuk sebagai kata yang perlu difilter, tapi **babi guling** ada di whitelist karena itu frasa normal.
 
-🔗 [Lihat contoh di source](https://github.com/sabililhaq/obscenity/blob/437c89b617d929dc683695f07dc0083df5606b90/src/preset/data/indonesian-words.json#L7)
+🔗 [Lihat contoh](https://github.com/sabililhaq/obscenity/blob/437c89b617d929dc683695f07dc0083df5606b90/src/preset/data/indonesian-words.json#L7)
 
 ```json
 {
@@ -63,7 +64,7 @@ Kalau kalian nemu:
 
 - Kata kasar Bahasa Indonesia yang belum ada
 - Variasi penulisan yang sering dipakai
-- Kata/frasa yang kena false positive
+- Kata/frasa yang sering kena tuduh negatif
 - Whitelist yang menurut kalian perlu ditambahkan
 
 # Obscenity
