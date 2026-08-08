@@ -19,11 +19,16 @@ describe('indonesian dataset & preset', () => {
 	it('should match basic Indonesian profane words', () => {
 		expect(indonesianMatcher.hasMatch('dasar anjing')).toBe(true);
 		expect(indonesianMatcher.hasMatch('pantat')).toBe(true);
+		expect(indonesianMatcher.hasMatch('k0nt0l')).toBe(true);
+		expect(indonesianMatcher.hasMatch('goblok')).toBe(true);
+		expect(indonesianMatcher.hasMatch('brengsek')).toBe(true);
+		expect(indonesianMatcher.hasMatch('diancok')).toBe(true);
+		expect(indonesianMatcher.hasMatch('sundal')).toBe(true);
+		expect(indonesianMatcher.hasMatch('koplak')).toBe(true);
 	});
 
 	it('should handle Indonesian leetspeak variations', () => {
 		expect(indonesianMatcher.hasMatch('4nj1n6')).toBe(true);
-		expect(indonesianMatcher.hasMatch('k0nt0l')).toBe(true);
 	});
 
 	it('should respect whitelisted Indonesian phrases', () => {

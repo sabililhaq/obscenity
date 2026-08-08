@@ -1,10 +1,11 @@
 import { DataSet } from '../dataset/DataSet';
 import type { RegExpMatcherOptions } from '../matcher/regexp/RegExpMatcher';
-import { pattern } from '../pattern/Pattern';
+import { parseRawPattern } from '../pattern/Pattern';
 import { collapseDuplicatesTransformer } from '../transformer/collapse-duplicates';
 import { resolveConfusablesTransformer } from '../transformer/resolve-confusables';
 import { resolveLeetSpeakTransformer } from '../transformer/resolve-leetspeak';
 import { toAsciiLowerCaseTransformer } from '../transformer/to-ascii-lowercase';
+import wordsData from './data/indonesian-words.json';
 import { englishDataset } from './english';
 
 /**
@@ -54,65 +55,37 @@ export const indonesianRecommendedTransformers: Pick<
 };
 
 /**
- * Sample Indonesian profane words type.
+ * Indonesian profane words type.
  */
-export type IndonesianProfaneWord =
-	| 'anjing'
-	| 'babi'
-	| 'kontol'
-	| 'ngentot'
-	| 'jancok'
-	| 'goblog'
-	| 'pantat';
+export type IndonesianProfaneWord = string;
 
 /**
- * A functional placeholder dataset of profane Indonesian words.
+ * Dataset of profane Indonesian words loaded from JSON.
+ *
+ * Note: Dynamic parseRawPattern() has a slight startup compilation overhead
+ * compared to static TS ASTs, but allows storing words & whitelists cleanly in JSON.
  */
 export const indonesianDataset = new DataSet<{
 	originalWord: IndonesianProfaneWord;
-}>()
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'anjing' })
-			.addPattern(pattern`|anj[i]ng|`)
-			.addPattern(pattern`|anj[e]ng|`)
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'babi' })
-			.addPattern(pattern`|babi|`)
-			.addWhitelistedTerm('babi guling')
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'kontol' })
-			.addPattern(pattern`|k[o]nt[o]l`)
-			.addPattern(pattern`k[o]nt[o]l|`)
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'ngentot' })
-			.addPattern(pattern`|ng[e]nt[o]t|`)
-			.addPattern(pattern`|d[i]ng[e]nt[o]t|`)
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'jancok' })
-			.addPattern(pattern`|janc[o]k|`)
-			.addPattern(pattern`|c[o]k|`)
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'goblog' })
-			.addPattern(pattern`|g[o]bl[o]g|`)
-			.addPattern(pattern`|g[o]bl[o]k|`)
-	)
-	.addPhrase((phrase) =>
-		phrase
-			.setMetadata({ originalWord: 'pantat' })
-			.addPattern(pattern`|pantat|`)
-			.addWhitelistedTerm('pantau')
-	);
+}>();
+
+for (const entry of wordsData) {
+	indonesianDataset.addPhrase((phrase) => {
+		phrase.setMetadata({ originalWord: entry.originalWord });
+
+		for (const pat of entry.patterns) {
+			phrase.addPattern(parseRawPattern(pat));
+		}
+
+		if (entry.whitelistedTerms) {
+			for (const term of entry.whitelistedTerms) {
+				phrase.addWhitelistedTerm(term);
+			}
+		}
+
+		return phrase;
+	});
+}
 
 /**
  * Combined dataset containing both English and Indonesian profane words.
@@ -122,4 +95,3 @@ export const multiLanguageDataset = new DataSet<{
 }>()
 	.addAll(englishDataset)
 	.addAll(indonesianDataset);
-
