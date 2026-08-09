@@ -33,7 +33,7 @@ export class Parser {
 		const nodes: Node[] = [];
 		const firstNode = this.nextNode();
 		const requireWordBoundaryAtStart = firstNode?.kind === SyntaxKind.BoundaryAssertion;
-		if (firstNode && !requireWordBoundaryAtStart) nodes.push(firstNode as Node);
+		if (firstNode && !requireWordBoundaryAtStart) nodes.push(firstNode);
 
 		let requireWordBoundaryAtEnd = false;
 		while (!this.done) {
