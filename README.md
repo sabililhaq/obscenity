@@ -3,6 +3,7 @@
 Punya temen toxic? Refer ke sini aja, biar ke-toxic-annya bisa bermanfaat :p
 
 Dataset Bahasa Indonesia untuk [Obscenity](https://github.com/jo3-l/obscenity).
+Bahasa daerah (Sunda, Jawa, Medan, etc.) are welcomed!
 
 Silakan kontribusi ke file ini:
 📄 [`indonesian-words.json`](https://github.com/sabililhaq/obscenity/blob/indonesian/src/preset/data/indonesian-words.json)
