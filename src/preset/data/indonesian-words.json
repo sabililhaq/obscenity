@@ -1,43 +1,43 @@
 [
   {
     "originalWord": "anjing",
-    "patterns": ["|anj[i]ng|", "|anj[e]ng|", "|anjir|", "|anjg|", "|ajg|", "|njing|", "|njir|", "|njrit|", "|anjrit|", "|anjrot|", "|anying|", "|ajig|"],
+    "patterns": ["|anj[i]ng|", "|anj[e]ng|", "|anjir|", "|anjg|", "|ajg|", "|njing|", "|njir|", "|njrit|", "|anjrit|", "|anjrot|", "|anying|", "|ajig|", "|anjay|", "|anjink|"],
     "whitelistedTerms": ["anjing tanah"]
   },
   {
     "originalWord": "babi",
     "patterns": ["|babi|"],
-    "whitelistedTerms": ["babi guling"]
+    "whitelistedTerms": ["babi guling", "babi ngepet"]
   },
   {
     "originalWord": "kontol",
-    "patterns": ["k[o]nt[o]l", "kntl", "kntol", "konti", "kintil", "kuntul"],
+    "patterns": ["k[o]nt[o]l", "kntl", "kntol", "konti", "kintil", "kuntul", "kontil", "kotl"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "ngentot",
-    "patterns": ["ng[e]nt[o]t", "d[i]ng[e]nt[o]t", "ngentd", "entot", "entotan"],
+    "patterns": ["ng[e]nt[o]t", "d[i]ng[e]nt[o]t", "ngentd", "entot", "entotan", "kentot", "kentu", "kenthu"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "jancok",
-    "patterns": ["janc[o]k", "jancuk", "jiancok", "diancok", "diancuk", "ancok", "ancuk", "dancok"],
+    "patterns": ["janc[o]k", "jancuk", "jiancok", "diancok", "diancuk", "ancok", "ancuk", "dancok", "jiancux"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "goblog",
-    "patterns": ["|g[o]bl[o]g|", "|g[o]bl[o]k|", "|goblo|", "|gblk|"],
+    "patterns": ["|g[o]bl[o]g|", "|g[o]bl[o]k|", "|goblo|", "|gblk|", "|geblek|", "|gebleg|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "pantat",
-    "patterns": ["|pantat|"],
+    "patterns": ["|pantat|", "|bokong|", "|burit|"],
     "whitelistedTerms": ["pantau"]
   },
   {
     "originalWord": "asu",
     "patterns": ["|asu|", "|asyu|", "|asem|"],
-    "whitelistedTerms": ["asumsi"]
+    "whitelistedTerms": ["asumsi", "asuh", "asuhan", "asuransi"]
   },
   {
     "originalWord": "bacot",
@@ -51,12 +51,12 @@
   },
   {
     "originalWord": "bangsat",
-    "patterns": ["|bangsat|", "|bansat|", "|bgst|", "|bgsd|", "|bangke|"],
+    "patterns": ["|bangsat|", "|bansat|", "|bgst|", "|bgsd|", "|bangke|", "|bangkai|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "bego",
-    "patterns": ["|bego|", "|belegug|", "|balegug|", "|bloon|", "|blo'on|", "|beloon|", "|boloho|", "|bolot|"],
+    "patterns": ["|bego|", "|belegug|", "|balegug|", "|bloon|", "|blo'on|", "|beloon|", "|boloho|", "|bolot|", "|begok|"],
     "whitelistedTerms": []
   },
   {
@@ -66,17 +66,17 @@
   },
   {
     "originalWord": "bodoh",
-    "patterns": ["|bodoh|", "|bodat|"],
+    "patterns": ["|bodoh|", "|bodat|", "|dungu|", "|dongok|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "brengsek",
-    "patterns": ["|brengsek|"],
+    "patterns": ["|brengsek|", "|berengsek|", "|brengsex|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "budek",
-    "patterns": ["|budek|", "|buduk|", "|budug|"],
+    "patterns": ["|budek|", "|buduk|", "|budug|", "|budeg|"],
     "whitelistedTerms": []
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "originalWord": "coli",
-    "patterns": ["|coli|", "|colai|", "|colay|", "|colmek|", "|cokil|"],
+    "patterns": ["|coli|", "|colai|", "|colay|", "|colmek|", "|cokil|", "|nyoli|"],
     "whitelistedTerms": []
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "originalWord": "crot",
-    "patterns": ["|crot|"],
+    "patterns": ["|crot|", "|ngecrot|"],
     "whitelistedTerms": []
   },
   {
@@ -121,12 +121,12 @@
   },
   {
     "originalWord": "ewe",
-    "patterns": ["|ewe|", "|ewean|", "|ngewe|"],
+    "patterns": ["|ewe|", "|ewean|", "|ngewe|", "|ngewek|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "gembel",
-    "patterns": ["|gembel|", "|gendeng|"],
+    "patterns": ["|gembel|", "|gendeng|", "|jembel|"],
     "whitelistedTerms": []
   },
   {
@@ -136,17 +136,17 @@
   },
   {
     "originalWord": "itil",
-    "patterns": ["|itil|"],
+    "patterns": ["|itil|", "|kelentit|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "jablay",
-    "patterns": ["|jablay|"],
+    "patterns": ["|jablay|", "|bispak|", "|jalang|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "jembut",
-    "patterns": ["|jembut|"],
+    "patterns": ["|jembut|", "|jembud|"],
     "whitelistedTerms": []
   },
   {
@@ -161,12 +161,12 @@
   },
   {
     "originalWord": "keparat",
-    "patterns": ["|keparat|"],
+    "patterns": ["|keparat|", "|kaparat|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "kimak",
-    "patterns": ["|kimak|"],
+    "patterns": ["|kimak|", "|kimax|"],
     "whitelistedTerms": []
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "originalWord": "memek",
-    "patterns": ["|memek|", "|meki|", "|pepek|", "|tempek|", "|tempik|"],
+    "patterns": ["|memek|", "|meki|", "|pepek|", "|tempek|", "|tempik|", "|memex|"],
     "whitelistedTerms": []
   },
   {
@@ -191,7 +191,7 @@
   },
   {
     "originalWord": "monyet",
-    "patterns": ["|monyet|", "|munyuk|"],
+    "patterns": ["|monyet|", "|munyuk|", "|kunyuk|"],
     "whitelistedTerms": []
   },
   {
@@ -216,12 +216,12 @@
   },
   {
     "originalWord": "pelacur",
-    "patterns": ["|pelacur|"],
+    "patterns": ["|pelacur|", "|pelakor|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "peler",
-    "patterns": ["|peler|"],
+    "patterns": ["|peler|", "|pler|", "|borjong|", "|tolir|"],
     "whitelistedTerms": []
   },
   {
@@ -231,13 +231,13 @@
   },
   {
     "originalWord": "sange",
-    "patterns": ["|sange|"],
+    "patterns": ["|sange|", "|ngaceng|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "sarap",
     "patterns": ["|sarap|"],
-    "whitelistedTerms": []
+    "whitelistedTerms": ["sarapan"]
   },
   {
     "originalWord": "sepong",
@@ -246,7 +246,7 @@
   },
   {
     "originalWord": "silit",
-    "patterns": ["|silit|"],
+    "patterns": ["|silit|", "|dubur|"],
     "whitelistedTerms": []
   },
   {
@@ -256,17 +256,17 @@
   },
   {
     "originalWord": "sundal",
-    "patterns": ["|sundal|", "|sundala|"],
+    "patterns": ["|sundal|", "|sundala|", "|arsundal|"],
     "whitelistedTerms": []
   },
   {
     "originalWord": "tai",
-    "patterns": ["|tai|", "|taik|"],
-    "whitelistedTerms": ["taiti", "taiwan"]
+    "patterns": ["|tai|", "|taik|", "|tahi|", "|taek|", "|tae|"],
+    "whitelistedTerms": ["taiti", "taiwan", "mentai", "detail", "antai"]
   },
   {
     "originalWord": "tetek",
-    "patterns": ["|tetek|", "|tete|", "|toket|"],
+    "patterns": ["|tetek|", "|tete|", "|toket|", "|tobrut|", "|nenen|", "|nete|"],
     "whitelistedTerms": []
   },
   {
@@ -277,6 +277,141 @@
   {
     "originalWord": "tolol",
     "patterns": ["|tolol|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "sial",
+    "patterns": ["|sial|", "|sialan|"],
+    "whitelistedTerms": ["kesialan"]
+  },
+  {
+    "originalWord": "bedebah",
+    "patterns": ["|bedebah|", "|bedegong|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "sontoloyo",
+    "patterns": ["|sontoloyo|", "|sompret|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "biadab",
+    "patterns": ["|biadab|", "|bejat|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "sinting",
+    "patterns": ["|sinting|", "|gelo|", "|edan|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "ngehe",
+    "patterns": ["|ngehe|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "mampus",
+    "patterns": ["|mampus|", "|mampos|", "|mampuz|", "|modar|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "jahanam",
+    "patterns": ["|jahanam|", "|laknat|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "najis",
+    "patterns": ["|najis|", "|najong|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "ngocok",
+    "patterns": ["|ngocok|", "|onani|", "|masturbasi|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "bokep",
+    "patterns": ["|bokep|", "|bugil|", "|bogel|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "germo",
+    "patterns": ["|germo|", "|mucikari|", "|bandot|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "maho",
+    "patterns": ["|maho|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "pecundang",
+    "patterns": ["|pecundang|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "kehed",
+    "patterns": ["|kehed|", "|kopet|", "|kurap|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "matamu",
+    "patterns": ["|matamu|", "|matane|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "kampungan",
+    "patterns": ["|kampungan|", "|ndeso|", "|udik|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "jangkrik",
+    "patterns": ["|jangkrik|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "iblis",
+    "patterns": ["|iblis|", "|setan|", "|dajal|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "boker",
+    "patterns": ["|boker|", "|berak|", "|eek|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "perkosa",
+    "patterns": ["|perkosa|", "|memperkosa|", "|pemerkosa|", "|diperkosa|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "kimcil",
+    "patterns": ["|kimcil|", "|cabean|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "genjik",
+    "patterns": ["|genjik|", "|genjit|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "congek",
+    "patterns": ["|congek|", "|conge|", "|congean|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "bagong",
+    "patterns": ["|bagong|", "|babangus|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "persetan",
+    "patterns": ["|persetan|"],
+    "whitelistedTerms": []
+  },
+  {
+    "originalWord": "haram",
+    "patterns": ["|haram jadah|", "|anak haram|"],
     "whitelistedTerms": []
   }
 ]
